@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111a28" />
+    <meta name="description" content="Acompanhe o Grand Prix 2026, conheça o evento e confira os resultados oficiais." />
+    <title>Grand Prix 2026 | Resultados</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio"><span class="brand-mark">GP</span><span>GRAND PRIX <small>2026</small></span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">O evento</a>
+        <a href="#resultados">Resultados</a>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CRIATIVIDADE · TECNOLOGIA · EQUIPE</p>
+          <h1>Ideias que<br /><span>movem o futuro.</span></h1>
+          <p class="hero-text">O Grand Prix reúne estudantes em um desafio de inovação, colaboração e muita velocidade.</p>
+          <a class="button" href="#resultados">Acompanhar resultados <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="track track-one"></div><div class="track track-two"></div><div class="orbit"><span>GP</span></div></div>
+        <div class="hero-meta"><span>GRAND PRIX</span><span>SENAI · SINOP</span><span>EDIÇÃO 2026</span></div>
+      </section>
+
+      <section id="sobre" class="about section">
+        <div><p class="eyebrow">SOBRE O EVENTO</p><h2>Aprender fazendo.<br />Avançar em equipe.</h2></div>
+        <p>Uma experiência de inovação em que as escuderias colocam conhecimento em prática, desenvolvem soluções e apresentam seus projetos. Acompanhe por aqui as novidades e a divulgação oficial dos resultados.</p>
+      </section>
+
+      <section class="countdown-section">
+        <div><p class="eyebrow">CONTAGEM REGRESSIVA</p><h2 id="countdownTitle">A divulgação está chegando</h2><p id="countdownMessage" class="muted">Aguarde a data oficial dos resultados.</p></div>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><strong id="days">—</strong><span>DIAS</span></div><div><strong id="hours">—</strong><span>HORAS</span></div><div><strong id="minutes">—</strong><span>MIN</span></div><div><strong id="seconds">—</strong><span>SEG</span></div>
+        </div>
+      </section>
+
+      <section id="resultados" class="results section">
+        <div class="section-heading"><div><p class="eyebrow">CLASSIFICAÇÃO OFICIAL</p><h2>Resultados</h2></div><span id="resultsBadge" class="badge">Carregando</span></div>
+        <p id="resultsMessage" class="muted" role="status">Consultando a divulgação oficial...</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Posição</th><th>Escuderia</th><th>Nota final</th></tr></thead>
+            <tbody id="rankingRows"><tr><td colspan="3">Carregando resultados...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#inicio"><span class="brand-mark">GP</span><span>GRAND PRIX <small>2026</small></span></a><span>Uma jornada de inovação e colaboração.</span></footer>
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
